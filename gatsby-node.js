@@ -5,20 +5,7 @@
  */
 
 // You can delete this file if you're not using it
-const path = require('path');
 const PostCssNormalize = require('postcss-normalize');
-
-const root = process.cwd();
-const themePaths = [
-    // for some reason, we need to add another path three folders deep in order to compile
-    // our styles correctly. @todo figure out why and remove this
-    path.resolve(root, './foo/bar/baz'),
-
-    // make src/theme/_colors.scss importable globally. This is required for fluent-controls,
-    // which does an "@import colors": we want this to resolve to ux-renderer's colors, which
-    // imports fluent-css's colors and applies overrides on top of it:
-    path.resolve(root, './src/theme/'),
-];
 
 exports.onCreateWebpackConfig = ({
     stage,
@@ -67,7 +54,6 @@ exports.onCreateWebpackConfig = ({
             {
                 loader: 'sass-loader',
                 options: {
-                    includePaths: themePaths,
                     sourceMap: true,
                 },
             },
