@@ -5,20 +5,26 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@microsoft/azure-iot-ux-fluent-controls": "^6.3.3",
+    "@microsoft/azure-iot-ux-fluent-css": "^6.0.0",
     "gatsby": "^2.13.45",
     "gatsby-image": "^2.2.7",
     "gatsby-plugin-manifest": "^2.2.4",
     "gatsby-plugin-offline": "^2.2.4",
     "gatsby-plugin-react-helmet": "^3.1.2",
+    "gatsby-plugin-sass": "^2.1.4",
     "gatsby-plugin-sharp": "^2.2.9",
     "gatsby-source-filesystem": "^2.1.7",
     "gatsby-transformer-sharp": "^2.2.5",
+    "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "postcss-normalize": "^8.0.1",
+    "postcss-preset-env": "^6.7.0",
     "prettier": "^1.18.2"
   },
   "keywords": [
